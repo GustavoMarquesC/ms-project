@@ -35,12 +35,12 @@ build/
 /.metadata/
 
 ### Pasta ###
-aulajpa
-demo
-aulajpamaven
-springbootmongodb
-springbootmongodb-1
-test
-testmongodb1
-testmongodb
+/aulajpa
+/demo
+/aulajpamaven
+/springbootmongodb
+/springbootmongodb-1
+/test
+/testmongodb1
+/testmongodb
 
