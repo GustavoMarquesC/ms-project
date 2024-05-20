@@ -11,14 +11,14 @@ import com.gustavomarques.hrpayroll.entities.Payment;
 import com.gustavomarques.hrpayroll.services.PaymentService;
 
 @RestController
-@RequestMapping(value = "/payments")
+@RequestMapping(value="/payments")
 public class PaymentResources {
 	
 	@Autowired
 	private PaymentService service;
 	
 	@GetMapping(value = "/{workerId}/days/{days}")
-	public ResponseEntity<Payment> getPaymenet(@PathVariable Long workerId, @PathVariable Integer days){
+	public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days){
 		Payment payment = service.getPayment(workerId, days);
 		return ResponseEntity.ok(payment);
 	}
