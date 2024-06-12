@@ -12,7 +12,7 @@ import com.gustavomarques.hrpayroll.services.PaymentService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @RestController
-@RequestMapping(value="/payments")
+@RequestMapping(value = "/payments")
 public class PaymentResources {
 	
 	@Autowired
@@ -24,7 +24,6 @@ public class PaymentResources {
 		Payment payment = service.getPayment(workerId, days);
 		return ResponseEntity.ok(payment);
 	}
-	
 	
 	public ResponseEntity<Payment> getPaymentAlternative(Long workerId, Integer days){
 		Payment payment = new Payment("Brann", 400.0, days);
